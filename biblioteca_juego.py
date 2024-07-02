@@ -124,14 +124,11 @@ texto_opcion_c = font.render((pregunta_a_mostrar['c']), True, (0,0,0))
 #     return texto_pregunta, texto_opcion_a, texto_opcion_b, texto_opcion_c
 
 
-
-def validar_ingreso(clave):
-    clave = ""
-    while len(clave) > 8:
-        clave
-
-
 def controlar_volumen(criterio:str, error,correcto,felicitaciones,click,jugar,puntajes,inicioo):
+    '''
+    recibe por parametros el indicador de va a ejecutar, y cada item a modificar
+    si esta en true baja todos los volumenes, si esta en false los vuelve a subir
+    '''
     if criterio == True:
         error.set_volume(0)
         correcto.set_volume(0)  
